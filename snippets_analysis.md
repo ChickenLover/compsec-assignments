@@ -50,4 +50,4 @@ if (IsValidSignature(Request["data"], Request["signature"])) {
    }.CreateDecryptor();
 }
 ```
-
+1. IV константа. Возможна атака с известным cypher текстом.

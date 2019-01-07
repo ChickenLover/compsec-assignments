@@ -31,8 +31,7 @@
 ```
 
 1. roleId просто достается из Cookie, любой может вставить себе base64('admin') и получить доступ к admin_inreface.php (Это недостаток)
-2. 
-
+2. конкатенация пользовательского ввода в header. Возможна инъекция в raw http от сервера
 
 ## Code snippet 2.
 
@@ -51,3 +50,4 @@ if (IsValidSignature(Request["data"], Request["signature"])) {
    }.CreateDecryptor();
 }
 ```
+
